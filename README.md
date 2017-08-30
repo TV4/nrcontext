@@ -1,5 +1,7 @@
 # nrcontext
 
+<img src="https://data.gopher.se/gopher/viking-gopher.svg" align="right" width="200" height="400">
+
 [![Build Status](https://travis-ci.org/TV4/nrcontext.svg?branch=master)](https://travis-ci.org/TV4/nrcontext)
 [![Go Report Card](https://goreportcard.com/badge/github.com/TV4/nrcontext)](https://goreportcard.com/report/github.com/TV4/nrcontext)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/TV4/nrcontext)
@@ -9,7 +11,9 @@ The [go-agent](https://github.com/newrelic/go-agent) from [New Relic](https://ne
 currently does not have support for storing `newrelic.Application` and `newrelic.Transaction`
 in [context.Context](https://golang.org/pkg/context/#Context).
 
-This package is an experiment in doing just that.
+> This package is an experiment in doing just that.
+
+## Background
 
 Initially based on the article [Using Go’s ‘context’ library for performance monitoring](https://medium.com/@gosamv/using-gos-context-library-for-performance-monitoring-aaf25dacb0fe) by Sam Vilain.
 
@@ -17,7 +21,7 @@ An alternative to this package is [newrelic-context](https://github.com/smacker/
 
 ## Status
 
-Still under active development.
+Still under active development. Expect some additions but few if any changes to the public API.
 
 ## Installation
 
