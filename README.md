@@ -1,6 +1,5 @@
 # nrcontext
 
-<img src="https://data.gopher.se/gopher/viking-gopher.svg" align="right" width="200" height="400">
 
 [![Build Status](https://travis-ci.org/TV4/nrcontext.svg?branch=master)](https://travis-ci.org/TV4/nrcontext)
 [![Go Report Card](https://goreportcard.com/badge/github.com/TV4/nrcontext)](https://goreportcard.com/report/github.com/TV4/nrcontext)
@@ -41,6 +40,8 @@ Copyright (c) 2017 TV4
 
 > The above copyright notice and this permission notice shall be
 > included in all copies or substantial portions of the Software.
+
+<img src="https://data.gopher.se/gopher/viking-gopher.svg" align="right" width="230" height="230">
 
 > THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 > EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
