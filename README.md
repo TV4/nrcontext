@@ -1,13 +1,13 @@
-# nrcontext - New Relic Context
+# nrcontext
 
 [![Build Status](https://travis-ci.org/TV4/nrcontext.svg?branch=master)](https://travis-ci.org/TV4/nrcontext)
 [![Go Report Card](https://goreportcard.com/badge/github.com/TV4/nrcontext)](https://goreportcard.com/report/github.com/TV4/nrcontext)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/TV4/nrcontext)
 [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/TV4/nrcontext#license-mit)
 
-The New Relic [go-agent](https://github.com/newrelic/go-agent) does not have
-support for storing `newrelic.Application` and `newrelic.Transaction`
-in [context.Context](https://golang.org/pkg/context/#Context) as of yet.
+The [go-agent](https://github.com/newrelic/go-agent) from [New Relic](https://newrelic.com/golang)
+currently does not have support for storing `newrelic.Application` and `newrelic.Transaction`
+in [context.Context](https://golang.org/pkg/context/#Context).
 
 This package is an experiment in doing just that.
 
