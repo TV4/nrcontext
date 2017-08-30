@@ -10,7 +10,7 @@ The [go-agent](https://github.com/newrelic/go-agent) from [New Relic](https://ne
 currently does not have support for storing `newrelic.Application` and `newrelic.Transaction`
 in [context.Context](https://golang.org/pkg/context/#Context).
 
-> This package is an experiment in doing just that.
+This package is an experiment in doing just that.
 
 ## Background
 
