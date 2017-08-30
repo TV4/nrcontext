@@ -12,12 +12,6 @@ in [context.Context](https://golang.org/pkg/context/#Context).
 
 This package is an experiment in doing just that.
 
-## Background
-
-Initially based on the article [Using Go’s ‘context’ library for performance monitoring](https://medium.com/@gosamv/using-gos-context-library-for-performance-monitoring-aaf25dacb0fe) by Sam Vilain.
-
-An alternative to this package is [newrelic-context](https://github.com/smacker/newrelic-context) by Maxim Sukharev.
-
 ## Status
 
 Still under active development. Expect some additions but few if any changes to the public API.
@@ -25,6 +19,12 @@ Still under active development. Expect some additions but few if any changes to 
 ## Installation
 
     go get -u github.com/TV4/nrcontext
+
+## Background
+
+Initially based on ideas in the article [Using Go’s ‘context’ library for performance monitoring](https://medium.com/@gosamv/using-gos-context-library-for-performance-monitoring-aaf25dacb0fe) by Sam Vilain.
+
+An alternative to this package is [newrelic-context](https://github.com/smacker/newrelic-context) by Maxim Sukharev.
 
 ## License (MIT)
 
