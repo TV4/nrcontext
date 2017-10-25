@@ -38,6 +38,23 @@ func TestRecordCustomEvent(t *testing.T) {
 	}
 }
 
+func TestRecordCustomMetric(t *testing.T) {
+	app := &Application{}
+
+	app.RecordCustomMetric("foo", 12.3)
+	app.RecordCustomMetric("foo", 45.6)
+
+	foo := app.CustomMetrics["foo"]
+
+	if got, want := len(foo), 2; got != want {
+		t.Fatalf("len(foo) = %d, want %d", got, want)
+	}
+
+	if got, want := foo[1], 45.6; got != want {
+		t.Fatalf("foo[1] = %v, want %v", got, want)
+	}
+}
+
 func TestWaitForConnection(t *testing.T) {
 	app := &Application{}
 

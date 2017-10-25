@@ -14,7 +14,8 @@ type Application struct {
 	AllTransactions   []*Transaction
 	LatestTransaction *Transaction
 
-	CustomEvents map[string][]map[string]interface{}
+	CustomEvents  map[string][]map[string]interface{}
+	CustomMetrics map[string][]float64
 }
 
 // NewApplication creates a new *Application
@@ -49,6 +50,21 @@ func (a *Application) RecordCustomEvent(eventType string, params map[string]inte
 	}
 
 	a.CustomEvents[eventType] = append(a.CustomEvents[eventType], params)
+
+	return nil
+}
+
+// RecordCustomMetric records a custom metric.
+func (a *Application) RecordCustomMetric(name string, value float64) error {
+	if a.CustomMetrics == nil {
+		a.CustomMetrics = map[string][]float64{}
+	}
+
+	if a.CustomMetrics[name] == nil {
+		a.CustomMetrics[name] = []float64{}
+	}
+
+	a.CustomMetrics[name] = append(a.CustomMetrics[name], value)
 
 	return nil
 }
