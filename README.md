@@ -14,7 +14,7 @@ This package is an experiment in doing just that.
 
 ## Status
 
-Still under active development. Expect some additions but few if any changes to the public API.
+Not under active development since we are not using New Relic for any Go services anymore.
 
 ## Installation
 
